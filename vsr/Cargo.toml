@@ -1,0 +1,16 @@
+[package]
+name = "vsr"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+glitch = { git = "https://github.com/b-hilprecht/glitch" }
+derive_more = { version = "1.0", features = ["is_variant"] }
+itertools = "0.14"
+serde = { version = "1.0", features = ["derive", "rc"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+rayon = "1.10"
+tracing = "0.1"
+tracing-subscriber = "0.3"
